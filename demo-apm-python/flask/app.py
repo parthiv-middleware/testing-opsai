@@ -31,7 +31,8 @@ def order_listing():
         {"customer_id": "C003", "total": 99.99},
         {"customer_id": "C002", "total": 25.00},
     ]
-    group_orders_by_customer(orders)
+    result = group_orders_by_customer(orders)
+    return result
 
 
 @app.route('/exception3')
